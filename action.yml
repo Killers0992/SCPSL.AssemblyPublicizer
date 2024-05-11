@@ -1,0 +1,15 @@
+name: "SCPSL.AssemblyPublicizer"
+description: "Publicizes provided assembly names."
+branding:
+  icon: file
+  color: blue
+inputs:
+  assemblies:
+    description: "Assemblies to publicize."
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - "--assemblies"
+    - ${{ inputs.assemblies }}
