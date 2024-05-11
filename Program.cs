@@ -29,7 +29,7 @@ public class AppCommand
 
                 if (!File.Exists(targetPath)) continue;
 
-                string publicizePath = Path.Combine(SLReferencesPath, Path.GetFileName(assemblyName) + "-Publicized.dll");
+                string publicizePath = Path.Combine(SLReferencesPath, Path.GetFileNameWithoutExtension(assemblyName) + "-Publicized.dll");
 
                 AssemblyPublicizer.Publicize(targetPath, publicizePath);
 
