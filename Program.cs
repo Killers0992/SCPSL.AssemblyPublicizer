@@ -33,7 +33,7 @@ public class AppCommand
 
                 AssemblyPublicizer.Publicize(targetPath, publicizePath);
 
-                Console.WriteLine("Publicized " + assemblyName);
+                Console.WriteLine($"Publicized {assemblyName} -> {publicizePath}");
             }
             return 0;
         }
