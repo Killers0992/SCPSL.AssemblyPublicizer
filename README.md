@@ -17,5 +17,5 @@ Publicize multiple assemblies.
     - name: Publicize Assemblies
       uses: killers0992/scpsl.assemblypublicizer@master
       with:
-        assemblies: 'Assembly-CSharp.dll,Mirorr.dll'
+        assemblies: 'Assembly-CSharp.dll,Mirror.dll'
 ```
